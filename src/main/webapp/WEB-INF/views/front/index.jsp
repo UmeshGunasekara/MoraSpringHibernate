@@ -1,93 +1,35 @@
 <%--
   Created by IntelliJ IDEA.
   User: umesh
-  Date: 4/10/2020
+  Date: 4/21/2020
   Time: 12:49 PM
   To change this template use File | Settings | File Templates.
 --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 
 <head>
+	<c:set var="context" value="${pageContext.request.contextPath}"/>
 	<meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="descriptison" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
 
-	<title>Vesperr Bootstrap Template - Index</title>
-	<meta content="" name="descriptison">
-	<meta content="" name="keywords">
+	<title>Mora War Spring Hibernate</title>
 
 	<!-- Favicons -->
-	<link href="assets/img/favicon.png" rel="icon">
-	<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+	<link href="${context}/resources/img/favicon.png" rel="icon">
+	<link href="${context}/resources/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<jsp:include page="common/front_link_inc.jsp"/>
 
-	<!-- Vendor CSS Files -->
-	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-	<link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-	<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-	<link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-	<link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-	<link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-	<!-- Template Main CSS File -->
-	<link href="assets/css/style.css" rel="stylesheet">
-
-	<!-- =======================================================
-    * Template Name: Vesperr - v2.0.0
-    * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
 </head>
 
 <body>
 
-<!-- ======= Header ======= -->
-<header id="header" class="fixed-top d-flex align-items-center">
-	<div class="container d-flex align-items-center">
-
-		<div class="logo mr-auto">
-			<h1 class="text-light"><a href="index.html"><span>Vesperr</span></a></h1>
-			<!-- Uncomment below if you prefer to use an image logo -->
-			<!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-		</div>
-
-		<nav class="nav-menu d-none d-lg-block">
-			<ul>
-				<li class="active"><a href="#header">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#services">Services</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#team">Team</a></li>
-				<li><a href="#pricing">Pricing</a></li>
-				<li class="drop-down"><a href="">Drop Down</a>
-					<ul>
-						<li><a href="#">Drop Down 1</a></li>
-						<li class="drop-down"><a href="#">Drop Down 2</a>
-							<ul>
-								<li><a href="#">Deep Drop Down 1</a></li>
-								<li><a href="#">Deep Drop Down 2</a></li>
-								<li><a href="#">Deep Drop Down 3</a></li>
-								<li><a href="#">Deep Drop Down 4</a></li>
-								<li><a href="#">Deep Drop Down 5</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Drop Down 3</a></li>
-						<li><a href="#">Drop Down 4</a></li>
-						<li><a href="#">Drop Down 5</a></li>
-					</ul>
-				</li>
-				<li><a href="#contact">Contact</a></li>
-
-				<li class="get-started"><a href="#about">Get Started</a></li>
-			</ul>
-		</nav><!-- .nav-menu -->
-
-	</div>
-</header><!-- End Header -->
+<jsp:include page="common/front_header_inc.jsp"/>
 
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex align-items-center">
@@ -102,7 +44,7 @@
 				</div>
 			</div>
 			<div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
-				<img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+				<img src="${context}/resources/img/hero-img.png" class="img-fluid animated" alt="">
 			</div>
 		</div>
 	</div>
@@ -118,27 +60,27 @@
 			<div class="row">
 
 				<div class="col-lg-2 col-md-4 col-6">
-					<img src="assets/img/clients/client-1.png" class="img-fluid" alt="" data-aos="zoom-in">
+					<img src="${context}/resources/img/clients/client-1.png" class="img-fluid" alt="" data-aos="zoom-in">
 				</div>
 
 				<div class="col-lg-2 col-md-4 col-6">
-					<img src="assets/img/clients/client-2.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+					<img src="${context}/resources/img/clients/client-2.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
 				</div>
 
 				<div class="col-lg-2 col-md-4 col-6">
-					<img src="assets/img/clients/client-3.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
+					<img src="${context}/resources/img/clients/client-3.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
 				</div>
 
 				<div class="col-lg-2 col-md-4 col-6">
-					<img src="assets/img/clients/client-4.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300">
+					<img src="${context}/resources/img/clients/client-4.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300">
 				</div>
 
 				<div class="col-lg-2 col-md-4 col-6">
-					<img src="assets/img/clients/client-5.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400">
+					<img src="${context}/resources/img/clients/client-5.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400">
 				</div>
 
 				<div class="col-lg-2 col-md-4 col-6">
-					<img src="assets/img/clients/client-6.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
+					<img src="${context}/resources/img/clients/client-6.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
 				</div>
 
 			</div>
@@ -185,7 +127,7 @@
 
 			<div class="row">
 				<div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay="150">
-					<img src="assets/img/counts-img.svg" alt="" class="img-fluid">
+					<img src="${context}/resources/img/counts-img.svg" alt="" class="img-fluid">
 				</div>
 
 				<div class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="300">
@@ -283,7 +225,7 @@
 
 			<div class="row">
 				<div class="col-md-6 d-flex align-items-stretch">
-					<div class="card" style='background-image: url("assets/img/more-services-1.jpg");' data-aos="fade-up" data-aos-delay="100">
+					<div class="card" style='background-image: url("${context}/resources/img/more-services-1.jpg");' data-aos="fade-up" data-aos-delay="100">
 						<div class="card-body">
 							<h5 class="card-title"><a href="">Lobira Duno</a></h5>
 							<p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
@@ -292,7 +234,7 @@
 					</div>
 				</div>
 				<div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-					<div class="card" style='background-image: url("assets/img/more-services-2.jpg");' data-aos="fade-up" data-aos-delay="200">
+					<div class="card" style='background-image: url("${context}/resources/img/more-services-2.jpg");' data-aos="fade-up" data-aos-delay="200">
 						<div class="card-body">
 							<h5 class="card-title"><a href="">Limere Radses</a></h5>
 							<p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem.</p>
@@ -302,7 +244,7 @@
 
 				</div>
 				<div class="col-md-6 d-flex align-items-stretch mt-4">
-					<div class="card" style='background-image: url("assets/img/more-services-3.jpg");' data-aos="fade-up" data-aos-delay="100">
+					<div class="card" style='background-image: url("${context}/resources/img/more-services-3.jpg");' data-aos="fade-up" data-aos-delay="100">
 						<div class="card-body">
 							<h5 class="card-title"><a href="">Nive Lodo</a></h5>
 							<p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores.</p>
@@ -311,7 +253,7 @@
 					</div>
 				</div>
 				<div class="col-md-6 d-flex align-items-stretch mt-4">
-					<div class="card" style='background-image: url("assets/img/more-services-4.jpg");' data-aos="fade-up" data-aos-delay="200">
+					<div class="card" style='background-image: url("${context}/resources/img/more-services-4.jpg");' data-aos="fade-up" data-aos-delay="200">
 						<div class="card-body">
 							<h5 class="card-title"><a href="">Pale Treda</a></h5>
 							<p class="card-text">Nostrum eum sed et autem dolorum perspiciatis. Magni porro quisquam laudantium voluptatem.</p>
@@ -424,7 +366,7 @@
 
 				<div class="testimonial-wrap">
 					<div class="testimonial-item">
-						<img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+						<img src="${context}/resources/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
 						<h3>Saul Goodman</h3>
 						<h4>Ceo &amp; Founder</h4>
 						<p>
@@ -437,7 +379,7 @@
 
 				<div class="testimonial-wrap">
 					<div class="testimonial-item">
-						<img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+						<img src="${context}/resources/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
 						<h3>Sara Wilsson</h3>
 						<h4>Designer</h4>
 						<p>
@@ -450,7 +392,7 @@
 
 				<div class="testimonial-wrap">
 					<div class="testimonial-item">
-						<img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+						<img src="${context}/resources/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
 						<h3>Jena Karlis</h3>
 						<h4>Store Owner</h4>
 						<p>
@@ -463,7 +405,7 @@
 
 				<div class="testimonial-wrap">
 					<div class="testimonial-item">
-						<img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+						<img src="${context}/resources/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
 						<h3>Matt Brandon</h3>
 						<h4>Freelancer</h4>
 						<p>
@@ -476,7 +418,7 @@
 
 				<div class="testimonial-wrap">
 					<div class="testimonial-item">
-						<img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+						<img src="${context}/resources/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
 						<h3>John Larson</h3>
 						<h4>Entrepreneur</h4>
 						<p>
@@ -516,12 +458,12 @@
 
 				<div class="col-lg-4 col-md-6 portfolio-item filter-app">
 					<div class="portfolio-wrap">
-						<img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+						<img src="${context}/resources/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
 						<div class="portfolio-info">
 							<h4>App 1</h4>
 							<p>App</p>
 							<div class="portfolio-links">
-								<a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
+								<a href="${context}/resources/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
 								<a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
 							</div>
 						</div>
@@ -530,12 +472,12 @@
 
 				<div class="col-lg-4 col-md-6 portfolio-item filter-web">
 					<div class="portfolio-wrap">
-						<img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+						<img src="${context}/resources/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
 						<div class="portfolio-info">
 							<h4>Web 3</h4>
 							<p>Web</p>
 							<div class="portfolio-links">
-								<a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+								<a href="${context}/resources/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
 								<a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
 							</div>
 						</div>
@@ -544,12 +486,12 @@
 
 				<div class="col-lg-4 col-md-6 portfolio-item filter-app">
 					<div class="portfolio-wrap">
-						<img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+						<img src="${context}/resources/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
 						<div class="portfolio-info">
 							<h4>App 2</h4>
 							<p>App</p>
 							<div class="portfolio-links">
-								<a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
+								<a href="${context}/resources/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
 								<a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
 							</div>
 						</div>
@@ -558,12 +500,12 @@
 
 				<div class="col-lg-4 col-md-6 portfolio-item filter-card">
 					<div class="portfolio-wrap">
-						<img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+						<img src="${context}/resources/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
 						<div class="portfolio-info">
 							<h4>Card 2</h4>
 							<p>Card</p>
 							<div class="portfolio-links">
-								<a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
+								<a href="${context}/resources/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
 								<a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
 							</div>
 						</div>
@@ -572,12 +514,12 @@
 
 				<div class="col-lg-4 col-md-6 portfolio-item filter-web">
 					<div class="portfolio-wrap">
-						<img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+						<img src="${context}/resources/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
 						<div class="portfolio-info">
 							<h4>Web 2</h4>
 							<p>Web</p>
 							<div class="portfolio-links">
-								<a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
+								<a href="${context}/resources/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
 								<a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
 							</div>
 						</div>
@@ -586,12 +528,12 @@
 
 				<div class="col-lg-4 col-md-6 portfolio-item filter-app">
 					<div class="portfolio-wrap">
-						<img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+						<img src="${context}/resources/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
 						<div class="portfolio-info">
 							<h4>App 3</h4>
 							<p>App</p>
 							<div class="portfolio-links">
-								<a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
+								<a href="${context}/resources/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
 								<a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
 							</div>
 						</div>
@@ -600,12 +542,12 @@
 
 				<div class="col-lg-4 col-md-6 portfolio-item filter-card">
 					<div class="portfolio-wrap">
-						<img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+						<img src="${context}/resources/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
 						<div class="portfolio-info">
 							<h4>Card 1</h4>
 							<p>Card</p>
 							<div class="portfolio-links">
-								<a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
+								<a href="${context}/resources/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
 								<a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
 							</div>
 						</div>
@@ -614,12 +556,12 @@
 
 				<div class="col-lg-4 col-md-6 portfolio-item filter-card">
 					<div class="portfolio-wrap">
-						<img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+						<img src="${context}/resources/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
 						<div class="portfolio-info">
 							<h4>Card 3</h4>
 							<p>Card</p>
 							<div class="portfolio-links">
-								<a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
+								<a href="${context}/resources/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
 								<a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
 							</div>
 						</div>
@@ -628,12 +570,12 @@
 
 				<div class="col-lg-4 col-md-6 portfolio-item filter-web">
 					<div class="portfolio-wrap">
-						<img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+						<img src="${context}/resources/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
 						<div class="portfolio-info">
 							<h4>Web 3</h4>
 							<p>Web</p>
 							<div class="portfolio-links">
-								<a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+								<a href="${context}/resources/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
 								<a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
 							</div>
 						</div>
@@ -659,7 +601,7 @@
 				<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
 					<div class="member" data-aos="fade-up" data-aos-delay="100">
 						<div class="member-img">
-							<img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+							<img src="${context}/resources/img/team/team-1.jpg" class="img-fluid" alt="">
 							<div class="social">
 								<a href=""><i class="icofont-twitter"></i></a>
 								<a href=""><i class="icofont-facebook"></i></a>
@@ -677,7 +619,7 @@
 				<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
 					<div class="member" data-aos="fade-up" data-aos-delay="200">
 						<div class="member-img">
-							<img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+							<img src="${context}/resources/img/team/team-2.jpg" class="img-fluid" alt="">
 							<div class="social">
 								<a href=""><i class="icofont-twitter"></i></a>
 								<a href=""><i class="icofont-facebook"></i></a>
@@ -695,7 +637,7 @@
 				<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
 					<div class="member" data-aos="fade-up" data-aos-delay="300">
 						<div class="member-img">
-							<img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+							<img src="${context}/resources/img/team/team-3.jpg" class="img-fluid" alt="">
 							<div class="social">
 								<a href=""><i class="icofont-twitter"></i></a>
 								<a href=""><i class="icofont-facebook"></i></a>
@@ -713,7 +655,7 @@
 				<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
 					<div class="member" data-aos="fade-up" data-aos-delay="400">
 						<div class="member-img">
-							<img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+							<img src="${context}/resources/img/team/team-4.jpg" class="img-fluid" alt="">
 							<div class="social">
 								<a href=""><i class="icofont-twitter"></i></a>
 								<a href=""><i class="icofont-facebook"></i></a>
@@ -948,51 +890,10 @@
 
 </main><!-- End #main -->
 
-<!-- ======= Footer ======= -->
-<footer id="footer">
-	<div class="container">
-		<div class="row d-flex align-items-center">
-			<div class="col-lg-6 text-lg-left text-center">
-				<div class="copyright">
-					&copy; Copyright <strong>Vesperr</strong>. All Rights Reserved
-				</div>
-				<div class="credits">
-					<!-- All the links in the footer should remain intact. -->
-					<!-- You can delete the links only if you purchased the pro version. -->
-					<!-- Licensing information: https://bootstrapmade.com/license/ -->
-					<!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vesperr-free-bootstrap-template/ -->
-					Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
-					<a href="#intro" class="scrollto">Home</a>
-					<a href="#about" class="scrollto">About</a>
-					<a href="#">Privacy Policy</a>
-					<a href="#">Terms of Use</a>
-				</nav>
-			</div>
-		</div>
-	</div>
-</footer><!-- End Footer -->
-
 <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
-<!-- Vendor JS Files -->
-<script src="assets/vendor/jquery/jquery.min.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-<script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-<script src="assets/vendor/counterup/counterup.min.js"></script>
-<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/venobox/venobox.min.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-
-<!-- Template Main JS File -->
-<script src="assets/js/main.js"></script>
+<jsp:include page="common/front_footer_inc.jsp"/>
+<jsp:include page="common/front_script_link_inc.jsp"/>
 
 </body>
-
 </html>
