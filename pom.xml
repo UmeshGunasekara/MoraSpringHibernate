@@ -191,12 +191,12 @@
 
 		<!--SERVLET-->
 		<!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>2.5</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>javax.servlet</groupId>-->
+			<!--<artifactId>servlet-api</artifactId>-->
+			<!--<version>2.5</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
 		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
 		<dependency>
@@ -546,8 +546,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version>
 				<configuration>
-					<source>13</source>
-					<target>13</target>
+					<source>1.6</source>
+					<target>1.6</target>
 					<outputFileName>MoraWar</outputFileName>
 					<compilerArguments>
 						<endorseddirs>${endorsed.dir}</endorseddirs>

@@ -36,7 +36,7 @@ public class LanguageServiceImpl extends GenericServiceImpl<Integer, PbLanguage>
     public LanguageServiceImpl() {}
 
     @Autowired
-    public LanguageServiceImpl(@Qualifier("adminLanguageDaoImpl") GenericDao<Integer, PbLanguage> languageGenericDao) {
+    public LanguageServiceImpl(@Qualifier("languageDaoImpl") GenericDao<Integer, PbLanguage> languageGenericDao) {
         super(languageGenericDao);
         languageDao = (LanguageDao) languageGenericDao;
     }
